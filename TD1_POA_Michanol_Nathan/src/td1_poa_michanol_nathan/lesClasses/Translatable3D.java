@@ -10,5 +10,7 @@ package td1_poa_michanol_nathan.lesClasses;
  * @author nathan
  */
 public interface Translatable3D implements Translate2D {
-    
+
+    public Point3D getRefPoint();    
+
 }
