@@ -28,12 +28,12 @@ public class Rectangle extends Shape2D {
     }
     
     public double perimeter(){
-        double valeur = (this.length+this.width)*2;
+        double valeur = 0.0;
         return valeur;
     }
     
     public double surface(){
-        double valeur = this.length*this.width;
+        double valeur = 0.0;
         return valeur;
     }
     

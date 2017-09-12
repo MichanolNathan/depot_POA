@@ -13,10 +13,18 @@ public abstract class Shape3D extends Shape implements Translatable3D{
     
     private Point3D refPoint;
     
-    public abstract double volume();
+    public double volume(){
+        
+        double leVolume = 0.0;
+        
+        return leVolume;
+    }
     
     public Point3D getRefPoint(){
         
         return null;
     }
+    
+    
+    
 }
