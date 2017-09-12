@@ -13,34 +13,34 @@ public class Point3D extends Point2D {
     
     private double z;
     
-    public Point3D (double unX,double unY,double unZ){
-        super(unX,unY);
+    public Point3D(double unX,double unY,double unZ){
+        super.x=unX;
+        super.y=unY;
         this.z = unZ;
     }
     
- 
-    @Override
+    public double distance(Point3D unPoint){
+        
+        double valeur = 0.0;
+        
+        return valeur;
+    }
+    
     public boolean isOrigin(){
-        boolean valeur = false;
-       if(super.x==0&&super.y==0&&this.z==0){
-           valeur = true;
-       };
+        
+       boolean valeur = false;
        
        return valeur;
     }
     
-    public void translate(double x,double y,double z){
+    public double distance(Point2D unPoint){
         
-            super.x+=x;
-            super.y+=y;
-            this.z+=z;
-    }
-    
-    public double distance(Point3D unPoint){
-        double valeur;
-        valeur = Math.sqrt( Math.pow(super.x - unPoint.x, 2) + Math.pow(super.y - unPoint.y, 2) + Math.pow(this.z - unPoint.z, 2)) ;
+        double valeur = 0.0;
+        
         return valeur;
     }
+    
+    
     
     
 }

@@ -19,9 +19,8 @@ public class Sphere extends Shape3D{
     
     public double volume(){
         
-      double valeur = 4/3*Math.pow(radius,3);
-      return valeur;
-      
+        double valeur = 0.0;
+        return valeur;
     }
     
 }
