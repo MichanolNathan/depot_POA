@@ -9,6 +9,15 @@ package td1_poa_michanol_nathan.lesClasses;
  *
  * @author nathan
  */
-public class Square {
+public class Square extends Rectangle {
+    
+    public Square(double theLength, double theWidth,Point2D refPoint) {
+         super(theLength, theWidth,refPoint);
+    }
+    
+    @Override
+    public String toString(){
+        return "Largeur : "+super.getWidth()+" ,longueur : "+super.getLength();
+    }
     
 }

@@ -11,9 +11,6 @@ package td1_poa_michanol_nathan.lesClasses;
  */
 public abstract class Shape {
     
-    public double surface(){
-        double valeur = 0.0;
-        return valeur;
-    }
+    public abstract double surface();
     
 }
