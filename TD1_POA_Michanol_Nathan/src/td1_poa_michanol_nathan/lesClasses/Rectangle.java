@@ -14,7 +14,8 @@ public class Rectangle extends Shape2D {
     private double length;
     private double width;
     
-    public Rectangle(double theLength,double theWidth){
+    public Rectangle(double theLength,double theWidth,Point2D refPoint){
+        super(refPoint);
         this.length=theLength;
         this.width=theWidth;
     }
@@ -28,14 +29,19 @@ public class Rectangle extends Shape2D {
     }
     
     public double perimeter(){
-        double valeur = 0.0;
+        double valeur = (this.length+this.width)*2;
         return valeur;
     }
     
     public double surface(){
-        double valeur = 0.0;
+        double valeur = this.length*this.width;
         return valeur;
     }
     
+    @Override
+    public String toString(){
+        
+        return "Longueur : "+this.length+",largeur :  "+this.width;
+    }
     
 }

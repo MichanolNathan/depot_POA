@@ -11,4 +11,16 @@ package td1_poa_michanol_nathan.lesClasses;
  */
 public abstract class Shape2D extends Shape implements Translate2D {
     
+    private Point2D refPoint;
+    
+    public Shape2D(Point2D refPoint){
+        this.refPoint = refPoint;
+    }
+     public abstract double perimeter();
+    
+    public Point2D getRefPoint(){
+        
+        return this.refPoint;
+        
+    }
 }

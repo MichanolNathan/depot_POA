@@ -3,14 +3,21 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package td1_poa_michanol_nathan.lesClasses;
+package Exercice_2_TD1;
+
+import java.util.Date;
 
 /**
  *
- * @author nathan
+ * @author Nathan
  */
-public abstract class Shape {
+public class CDI extends Contrat{
     
-    public abstract double surface();
+    
+    
+    public CDI (Double unSalaire,Date debut){
+        super(unSalaire,debut);
+       
+    }
     
 }

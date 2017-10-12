@@ -29,20 +29,25 @@ public class Point2D {
     }
     
     public void translate(double unX,double unY){
-            
+            this.x+=unX;
+            this.y+=unY;
     }
     
     public boolean isOrigin(){
         
-       boolean valeur = false;
+      boolean valeur = false;
+      
+      if (this.x==0 && this.y==0){
+          valeur = true;
+      }
        
        return valeur;
     }
     
     public double distance(Point2D unPoint){
         
-        double valeur = 0.0;
-        
+        double valeur;
+        valeur = Math.sqrt( Math.pow(this.x - unPoint.x, 2) + Math.pow(this.y - unPoint.y, 2) );
         return valeur;
     }
     

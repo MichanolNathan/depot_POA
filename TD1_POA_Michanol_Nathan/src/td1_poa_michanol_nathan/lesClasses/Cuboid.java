@@ -9,13 +9,14 @@ package td1_poa_michanol_nathan.lesClasses;
  *
  * @author nathan
  */
-public class Cuboid extends Shape3D {
+final class Cuboid extends Shape3D {
     
     private double length;
     private double width;
     private double height;
     
-    public Cuboid(double longueur,double largeur,double hauteur){
+    public Cuboid(Point3D refPoint,double longueur,double largeur,double hauteur){
+        super(refPoint);
         this.length=longueur;
         this.width=largeur;
         this.height = hauteur;
@@ -34,13 +35,20 @@ public class Cuboid extends Shape3D {
     }
     
     public double volume(){
-        double valeur = 0.0;
+        double valeur;
+        valeur = this.length*this.width*this.height;
         return valeur;
     }
     
     public double surface(){
-        double valeur=0.0;
+        double valeur;
+        valeur = 2*(this.length*this.width+this.width*this.height+this.length*this.height);
         return valeur;
+    }
+    
+    @Override
+    public String toString(){
+        return "longueur : "+this.length+",largeur : "+this.width+",hauteur :  "+this.height;
     }
             
 }

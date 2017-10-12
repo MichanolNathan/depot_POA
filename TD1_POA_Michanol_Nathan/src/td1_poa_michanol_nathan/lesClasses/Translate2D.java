@@ -11,4 +11,5 @@ package td1_poa_michanol_nathan.lesClasses;
  */
 public interface Translate2D {
     
+    public abstract Point2D getRefPoint();
 }
